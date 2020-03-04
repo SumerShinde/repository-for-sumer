@@ -32,5 +32,12 @@ def main():
     initialize()
     getLetter()
     
-
+def test():
+    if (letter in SECRET):
+        pos = SECRET.find(letter)
+        updatedWord[pos] = letter
+        print updatedWord.join()
+        ifWon()
+    else:
+        getLetter()
 
